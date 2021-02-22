@@ -23,10 +23,50 @@ nav {
     padding: 10px;
     overflow: hidden;
     background-color: green;
-    font-weight: 300;
-    color: red;
+    /*font-weight: 300;*/
+    font-size: 14px;
+    color: white;
     position: fixed;
     z-index: 1;
+}
+
+nav .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*height: calc(100% - 80px);*/
+}
+
+.box-top {
+    /*debug*/
+    background-color: yellowgreen;
+}
+
+.box-top img {
+    width: 25px;
+}
+
+nav .container ul li {
+    list-style-type: none;
+}
+
+nav .container ul li a {
+    color: white;
+}
+
+nav .container .top-menu img {
+    margin-right: 5px;
+}
+
+
+.center-menu h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.top-menu li img {
+    width: 20px;
 }
 
 
