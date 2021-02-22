@@ -22,8 +22,7 @@ nav {
     width: 250px;
     padding: 10px;
     overflow: hidden;
-    background-color: green;
-    /*font-weight: 300;*/
+    background-color: darkgoldenrod;
     font-size: 14px;
     color: white;
     position: fixed;
@@ -42,22 +41,26 @@ nav .container {
     background-color: yellowgreen;
 }
 
-.box-top img {
-    width: 25px;
-}
 
 nav .container ul li {
     list-style-type: none;
+    padding: 5px 0;
 }
 
 nav .container ul li a {
     color: white;
 }
 
+.center-menu ul {
+    height:250px;
+    /*overflow:hidden;*/
+    /*overflow-y:scroll;*/
+
+}
+
 nav .container .top-menu img {
     margin-right: 5px;
 }
-
 
 .center-menu h5 {
     text-transform: uppercase;
@@ -65,9 +68,32 @@ nav .container .top-menu img {
     font-size: 13px;
 }
 
+.center-menu img {
+    width: 20px;
+    padding-right: 5px;
+}
+
 .top-menu li img {
     width: 20px;
 }
+
+.bottom-menu {
+    height: 100px;
+    width: 230px;
+    text-align: left;
+    font-size: 14px;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    bottom: 80px;
+    left: 10px;
+    /*debug*/
+    background-color: hotpink;
+}
+
+
+
+
 
 
 
