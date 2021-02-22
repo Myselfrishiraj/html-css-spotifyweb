@@ -145,6 +145,15 @@ footer .footer-right {
 
 }
 
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-height: 370px) {
+
+    nav .container .bottom-menu {
+        display: none;
+    }
+
+}
+
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
