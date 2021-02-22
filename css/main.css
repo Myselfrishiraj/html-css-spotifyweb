@@ -91,6 +91,41 @@ nav .container .top-menu img {
     background-color: hotpink;
 }
 
+/*main*/
+
+
+/* sezione menu navigazione */
+
+main {
+    background-color: yellowgreen;
+    height: 100vh;
+    width: 100%;
+    margin-left: 250px;
+}
+
+main .container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+main .container .box-menu .text-menu {
+    text-align: center;
+}
+
+main .container .box-menu .text-menu ul li {
+    display: inline-block;
+    padding: 10px 6px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+main .container .box-menu .text-menu ul li a {
+    font-size: 10px;
+}
+
+/* sezione album */
 
 
 
