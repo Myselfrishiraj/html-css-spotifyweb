@@ -91,7 +91,7 @@ nav .container .top-menu img {
 main .box-upgrade {
     height: 60px;
     width: calc(100% - 250px);
-    background-color: #1c1c1c;
+    background-color: rgba(8,11,18,0.5);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -173,13 +173,14 @@ main .container .container-album .box-item {
     display: flex;
 }
 
-main .container .container-album .box-item .title h2 {
+
+main .container .container-album .box-item .album-row h2 {
     color: white;
     font-size: 20px;
     font-weight: bold;
 }
 
-main .container .container-album .box-item .title p {
+main .container .container-album .box-item .album-row p {
     font-size: 10px;
     font-weight: 600;
     color: #A9A9A9;
@@ -194,6 +195,7 @@ main .container .container-album .box-album-card {
 
 main .container .container-album .box-album-card .album-card {
     margin: 0 5px;
+    flex-basis: 16%;
 }
 
 main .container .container-album .box-album-card .album-card img {
