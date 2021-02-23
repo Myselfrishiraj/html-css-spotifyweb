@@ -278,18 +278,10 @@ footer .box-center .music-player ul li {
     display: inline-block;
 }
 
-/*
-
-
 footer .box-center .music-player ul li a {
     padding: 0 15px;
     color: white;
 }
-
-footer .box-center .music-player .far.fa-play-circle {
-    font-size: 25px;
-
-}*/
 
 footer .box-right .control-player ul li {
     display: inline-block;
