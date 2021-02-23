@@ -224,8 +224,87 @@ main .container .container-album .box-album-card .album-card p {
 
 /*footer*/
 
-
 footer {
+    background-color: #282828;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    position: fixed;
+}
+
+footer .box-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+footer .box-left {
+    color: white;
+    display: flex;
+}
+
+footer .box-left .center {
+    margin: 25px 10px 0 10px;
+
+}
+
+footer .box-left .center h4 {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+footer .box-left .center p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #A9A9A9;
+}
+
+footer .box-left .right {
+    display: flex;
+    align-items: center;
+}
+
+footer .box-left .right .icon {
+    margin: 0 20px;
+}
+
+footer .box-left .right .icon i{
+    margin: 0 5px;
+    color: #A9A9A9;
+}
+
+footer .box-center .music-player ul li {
+    display: inline-block;
+}
+
+footer .box-center .music-player ul li a {
+    padding: 0 15px;
+    color: white;
+}
+
+footer .box-center .music-player .far.fa-play-circle {
+    font-size: 30px;
+
+}
+
+footer .box-right .control-player ul li {
+    display: inline-block;
+}
+
+footer .box-right .control-player ul li a {
+    padding: 0 20px;
+    color: white;
+}
+
+footer .box-footer .box-left .left img {
+    width: 40px;
+    margin: 20px 10px;
+}
+
+
+
+/*footer {
     width: 100%;
     bottom: 0;
     background-color: #282828;
@@ -255,7 +334,7 @@ footer .footer-center {
 footer .footer-right {
     display: flex;
     color: white;
-}
+}*/
 
 
 /* mediaQuery*/
