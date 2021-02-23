@@ -18,11 +18,12 @@ body {
 }
 
 nav {
-    height: 100vh;
+    /*height: 100vh;*/
+    height: calc(100% - 80px);
     width: 250px;
     padding: 10px;
-    overflow: hidden;
-    background-color: darkgoldenrod;
+    /*overflow: hidden;*/
+    background-color: #000;
     font-size: 14px;
     color: white;
     position: fixed;
@@ -33,12 +34,16 @@ nav .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*height: calc(100% - 80px);*/
+    /*height: calc(100% - 30px);*/
+
 }
 
-.box-top {
-    /*debug*/
-    background-color: yellowgreen;
+#logo {
+    width: 100px;
+}
+
+nav .top-menu, nav .center-menu {
+    padding: 10px 0;
 }
 
 
@@ -77,34 +82,56 @@ nav .container .top-menu img {
     width: 20px;
 }
 
-.bottom-menu {
-    height: 100px;
-    width: 230px;
-    text-align: left;
-    font-size: 14px;
-    color: white;
-    position: fixed;
-    z-index: 1;
-    bottom: 80px;
-    left: 10px;
-    /*debug*/
-    background-color: hotpink;
-}
+
 
 /*main*/
 
+/* sezione upgrade */
 
-/* sezione menu navigazione */
+main .box-upgrade {
+    height: 80px;
+    width: calc(100% - 250px);
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+main .box-upgrade ul {
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+main .box-upgrade li {
+    list-style-type: none;
+    border: 1px solid white;
+    padding: 7px 35px;
+    border-radius: 20px;
+}
+
+main .box-upgrade li a {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+    /* sezione menu navigazione */
 
 main {
-    background-color: yellowgreen;
     height: 100vh;
     width: 100%;
     margin-left: 250px;
+    /*debug*/
+    background-color: #141922;
 }
 
 main .container {
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -127,17 +154,63 @@ main .container .box-menu .text-menu ul li a {
 
 /* sezione album */
 
+main .container .container-album {
+    overflow: auto;
+    height: calc(100vh - 80px);
+    position: fixed;
+    padding-top: 80px;
+    padding-right: 20px;
+}
 
+main .container .container-album .box-item {
+    margin: 10px auto;
+    overflow: auto;
+    display: flex;
+}
 
+main .container .container-album .box-item .title h2 {
+    color: white;
+    font-size: 34px;
+}
 
+main .container .container-album .box-album-card {
+    display: flex;
+    /*flex-flow: row wrap;*/
+    margin-top: 50px;
+}
+
+main .container .container-album .box-album-card .album-card {
+    margin: 0 5px;
+}
+
+main .container .container-album .box-album-card .album-card img {
+    width: 150px;
+    height: 150px;
+    /*border-radius: 50%;*/
+}
+
+main .container .container-album .box-album-card .album-card h5 {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+main .container .container-album .box-album-card .album-card p {
+    text-align: center;
+    color: #A9A9A9;
+    font-size: 12px;
+}
 
 
 /*footer*/
 
+
 footer {
     width: 100%;
     bottom: 0;
-    background-color: #2d2c2c;
+    background-color: #282828;
     color: white;
     position: fixed;
     z-index: 1;
@@ -167,9 +240,6 @@ footer .footer-right {
 }
 
 
-
-
-
 /* mediaQuery*/
 
 /*Extra small devices (portrait phones, less than 576px)*/
@@ -177,15 +247,6 @@ footer .footer-right {
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-
-}
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (max-height: 370px) {
-
-    nav .container .bottom-menu {
-        display: none;
-    }
 
 }
 
