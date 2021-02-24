@@ -8,85 +8,132 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #141922;
 }
+
+ul {
+    list-style-type: none;
+}
+
 
 /* menu navigazione */
 
 
-#main-container {
+#main-wrap {
     display: flex;
 }
 
-nav {
-    /*height: 100vh;*/
-    height: calc(100% - 80px);
+/* navbar spotify */
+
+/* Aside */
+
+aside {
+    height: 100vh;
     width: 250px;
-    padding: 10px;
-    /*overflow: hidden;*/
     background-color: #000;
-    font-size: 14px;
-    color: white;
-    position: fixed;
     z-index: 1;
+    padding: 20px;
+    overflow: hidden;
+    color: white;
+    font-weight: 300;
+    position: fixed;
 }
 
-nav .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /*height: calc(100% - 30px);*/
-
-}
-
-#logo {
+aside .logo {
     width: 100px;
 }
 
-nav .top-menu, nav .center-menu {
-    padding: 10px 0;
+
+aside .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 80px);
 }
 
+aside .top .menu-top .menut-box {
+    padding: 30px 0;
+    font-size: 12px;
+}
 
-nav .container ul li {
-    list-style-type: none;
+aside .top .menu-top .menut-box img {
+    width: 30px;
+    padding-right: 10px;
+}
+
+aside .top .menu-top .menut-box ul li a {
+    color: #A9A9A9;
+    font-size: 12px;
+}
+
+aside .top .menu-top .menut-box ul li {
     padding: 5px 0;
 }
 
-nav .container ul li a {
-    color: white;
-}
 
-.center-menu ul {
-    height:250px;
-    /*overflow:hidden;*/
-    /*overflow-y:scroll;*/
-
-}
-
-nav .container .top-menu img {
-    margin-right: 5px;
-}
-
-.center-menu h5 {
+aside .top .menu-bottom .menub-box .title h3 {
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 13px;
+    font-size: 12px;
 }
 
-.center-menu img {
-    width: 20px;
-    padding-right: 5px;
+aside .top .menu-bottom .menub-box ul li a {
+    color: #A9A9A9;
+    font-size: 12px;
 }
 
-.top-menu li img {
-    width: 20px;
+/*aside .bottom .box-top .box-text p {
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}*/
+
+aside .bottom .box-top ul li{
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+aside .bottom .box-top ul li a {
+    color: #A9A9A9;
+    font-size: 12px;
+}
+
+aside .bottom .box-top img {
+    width: 30px;
+    padding-right: 10px;
 }
 
 
+aside .bottom .box-bottom .box-user p {
+    padding-top: 10px;
+}
 
-/*main*/
 
-/* sezione upgrade */
+/* inizio immagine id utente */
+
+/*aside .bottom .box-top .box-text p:before {
+    content: "\f0ab";
+    margin-right: 10px;
+    color: white;
+    font-weight: 900;
+}*/
+
+/*aside .bottom .box-bottom .box-user p:before {
+    content: "\f007";
+    margin-right: 10px;
+    font-size: 30px;
+    color: white;
+    font-weight: 900;
+}*/
+
+/* fine immagine id utente */
+
+
+/* fine Aside */
+
+
+
+/* main */
+
+/* sezione upgrade nel main */
 
 main .box-upgrade {
     height: 60px;
@@ -119,107 +166,93 @@ main .box-upgrade li a {
 }
 
 
-    /* sezione menu navigazione */
+/* sezione main */
 
 main {
     height: 100vh;
     width: 100%;
     margin-left: 250px;
     /*debug*/
-    background-color: #141922;
+    /*background-color: #141922;*/
 }
 
-main .container {
+main .main-container {
     max-width: 95%;
     margin: 0 auto;
+    /*overflow: scroll;*/
+    /*background-color: red;*/
+    /*background-color: #141922;*/
+    /* display: flex;
+     justify-content: center;*/
+}
+
+.box-menu {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
 }
 
-main .container .box-menu .text-menu {
-    text-align: center;
-}
-
-main .container .box-menu .text-menu ul li {
+.box-menu ul li{
     display: inline-block;
     padding: 10px 6px;
     text-transform: uppercase;
-
 }
 
-main .container .box-menu .text-menu ul li a {
+.box-menu ul li a {
     font-size: 12px;
     font-weight: 600;
-    color: #A9A9A9;
-
-}
-
-/* sezione album */
-
-main .container .container-album {
-    overflow: auto;
-    height: calc(100vh - 80px);
-    width: 100%;
-    position: fixed;
-    padding-top: 80px;
-    padding-right: 20px;
-    margin-left: 280px;
-
-}
-
-main .container .container-album .box-item {
-    margin: 10px auto;
-    overflow: auto;
-    display: flex;
+    color: #A9A9A9
 }
 
 
-main .container .container-album .box-item .album-row h2 {
+/*fine menu main*/
+
+
+/*sezione album*/
+
+.box-title h2 {
     color: white;
     font-size: 20px;
     font-weight: bold;
+    padding-top: 20px;
 }
 
-main .container .container-album .box-item .album-row p {
-    font-size: 10px;
-    font-weight: 600;
-    color: #A9A9A9;
-    padding-bottom: 10px;
-}
-
-main .container .container-album .box-album-card {
+.box-1 {
     display: flex;
-    margin-top: 20px;
-    /*flex-flow: row wrap;*/
+    /*justify-content: space-between ;*/
+    /*debug*/
+    background-color: green;
 }
 
-main .container .container-album .box-album-card .album-card {
-    margin: 0 5px;
-    flex-basis: 16%;
+.box-1.last {
+    margin-bottom: 100px;
 }
 
-main .container .container-album .box-album-card .album-card img {
-    width: 150px;
-    height: 150px;
+
+.box-1 .box-album {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: calc(100% / 6);
+    /* debug*/
+    border: 1px solid red;
+    background-color: green;
 }
 
-main .container .container-album .box-album-card .album-card h5 {
+.box-1 .box-album .image-box {
+    max-width: 130px;
+    min-width: 50px;
     text-align: center;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    padding-top: 10px;
+    /*debug*/
+    background-color: yellowgreen;
+    border: 2px solid black;
 }
 
-main .container .container-album .box-album-card .album-card p {
-    text-align: center;
-    color: #A9A9A9;
-    font-size: 10px;
+.box-album .image-box > img {
+    max-width: 100%;
 }
 
-.box-item:last-child img {
-    border-radius: 50%;
-}
+
 
 
 /*footer*/
@@ -246,7 +279,6 @@ footer .box-left {
 
 footer .box-left .center {
     margin: 25px 10px 0 10px;
-
 }
 
 footer .box-left .center h4 {
@@ -296,6 +328,7 @@ footer .box-footer .box-left .left img {
     width: 40px;
     margin: 20px 10px;
 }
+
 
 
 
