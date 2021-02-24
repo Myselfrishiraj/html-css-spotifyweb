@@ -133,6 +133,14 @@ aside .bottom .box-bottom .box-user p {
 
 /* main */
 
+main {
+    height: 100vh;
+    width: 100%;
+    margin-left: 250px;
+    /*debug*/
+    /*background-color: #141922;*/
+}
+
 /* sezione upgrade nel main */
 
 main .box-upgrade {
@@ -168,13 +176,7 @@ main .box-upgrade li a {
 
 /* sezione main */
 
-main {
-    height: 100vh;
-    width: 100%;
-    margin-left: 250px;
-    /*debug*/
-    /*background-color: #141922;*/
-}
+
 
 main .main-container {
     max-width: 95%;
@@ -360,6 +362,39 @@ footer .box-footer .box-left .left img {
 
 /* mediaQuery*/
 
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px) {
+
+    aside {
+        width: 72px;
+    }
+
+    main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    main .main-container {
+        margin-left: 80px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********* dal sito bootstrap ***********/
 /*Extra small devices (portrait phones, less than 576px)*/
 /*No media query for `xs` since this is the default in Bootstrap*/
 
