@@ -377,7 +377,10 @@ footer .box-footer .box-left .left img {
 
     main .main-container {
         margin-left: 80px;
+    }
 
+    main .box-upgrade {
+        width: 100%;
     }
 
 }
