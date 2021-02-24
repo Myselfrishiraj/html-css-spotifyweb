@@ -44,6 +44,7 @@ aside .logo {
 }
 
 
+
 aside .container {
     display: flex;
     flex-direction: column;
@@ -81,10 +82,6 @@ aside .top .menu-bottom .menu-box-2 ul li a {
     font-size: 12px;
 }
 
-/*aside .bottom .box-top .box-text p {
-    padding-bottom: 10px;
-    border-bottom: 1px solid grey;
-}*/
 
 aside .bottom .box-top ul li{
     padding-bottom: 10px;
@@ -96,38 +93,25 @@ aside .bottom .box-top ul li a {
     font-size: 12px;
 }
 
+aside .bottom .box-bottom ul li a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 aside .bottom .box-top img {
     width: 30px;
     padding-right: 10px;
 }
 
+aside .bottom .box-bottom img {
+    width: 35px;
+    padding-right: 10px;
+}
 
 aside .bottom .box-bottom .box-user p {
     padding-top: 10px;
 }
-
-
-/* inizio immagine id utente */
-
-/*aside .bottom .box-top .box-text p:before {
-    content: "";
-    margin-right: 10px;
-    color: white;
-    font-weight: 900;
-}*/
-
-/*aside .bottom .box-bottom .box-user p:before {
-    content: "";
-    margin-right: 10px;
-    font-size: 30px;
-    color: white;
-    font-weight: 900;
-}*/
-
-/* fine immagine id utente */
-
-
-/* fine Aside */
 
 
 
@@ -141,7 +125,6 @@ main {
     /*background-color: #141922;*/
 }
 
-/* sezione upgrade nel main */
 
 main .box-upgrade {
     height: 60px;
@@ -174,10 +157,6 @@ main .box-upgrade li a {
 }
 
 
-/* sezione main */
-
-
-
 main .main-container {
     max-width: 95%;
     margin: 0 auto;
@@ -205,9 +184,6 @@ main .main-container {
     font-weight: 600;
     color: #A9A9A9
 }
-
-
-/*fine menu main*/
 
 
 /* sezione album */
@@ -247,7 +223,6 @@ main .main-container {
     display: flex;
     justify-content: center;
     align-items: baseline;
-
     /* debug*/
     /*border: 1px solid red;*/
     /*background-color: green;*/
@@ -367,7 +342,7 @@ footer .box-footer .box-left .left img {
 @media (max-width: 767px) {
 
     aside {
-        width: 72px;
+        width: 70px;
     }
 
     main {
@@ -381,6 +356,18 @@ footer .box-footer .box-left .left img {
 
     main .box-upgrade {
         width: 100%;
+    }
+
+    .menu-top .menu-box-1 ul li a {
+        display: none;
+    }
+
+    .menu-bottom {
+        display: none;
+    }
+
+    .bottom .box-top ul li a, .bottom .box-bottom ul li a  {
+        display: none;
     }
 
 }
