@@ -53,7 +53,7 @@ aside .container {
 }
 
 aside .top .menu-top .menu-box-1 {
-    padding: 30px 0;
+    padding: 30px 0 10px 0;
     font-size: 12px;
 }
 
@@ -75,7 +75,18 @@ aside .top .menu-top .menu-box-1 ul li {
 aside .top .menu-bottom .menu-box-2 .title h3 {
     text-transform: uppercase;
     font-size: 12px;
+    font-weight: bold;
 }
+
+aside .top .menu-bottom .menu-box-2 .title ul img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+aside .top .menu-bottom .menu-box-2 .title ul li a {
+    font-size: 14px;
+}
+
 
 aside .top .menu-bottom .menu-box-2 ul li a {
     color: #A9A9A9;
@@ -84,7 +95,7 @@ aside .top .menu-bottom .menu-box-2 ul li a {
 
 
 aside .bottom .box-top ul li{
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     border-bottom: 1px solid grey;
 }
 
