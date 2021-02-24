@@ -110,14 +110,14 @@ aside .bottom .box-bottom .box-user p {
 /* inizio immagine id utente */
 
 /*aside .bottom .box-top .box-text p:before {
-    content: "\f0ab";
+    content: "";
     margin-right: 10px;
     color: white;
     font-weight: 900;
 }*/
 
 /*aside .bottom .box-bottom .box-user p:before {
-    content: "\f007";
+    content: "";
     margin-right: 10px;
     font-size: 30px;
     color: white;
@@ -180,10 +180,10 @@ main .main-container {
     max-width: 95%;
     margin: 0 auto;
     /*overflow: scroll;*/
-    /*background-color: red;*/
-    /*background-color: #141922;*/
     /* display: flex;
      justify-content: center;*/
+    /*debug*/
+    /*background-color: #141922;*/
 }
 
 .box-menu {
@@ -208,11 +208,11 @@ main .main-container {
 /*fine menu main*/
 
 
-/*sezione album*/
+/* sezione album */
 
 .box-title h2 {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -225,7 +225,7 @@ main .main-container {
 .box-1 {
     display: flex;
     padding: 20px 0;
-    /*justify-content: space-between ;*/
+    /*justify-content: space-evenly;*/
     /*debug*/
     /*background-color: green;*/
 }
@@ -240,18 +240,20 @@ main .main-container {
 
 
 .box-1 .box-album {
+    width: calc(100% / 6);
+    padding: 0 3px;
     display: flex;
     justify-content: center;
     align-items: baseline;
-    width: calc(100% / 6);
+
     /* debug*/
     /*border: 1px solid red;*/
     /*background-color: green;*/
 }
 
 .box-1 .box-album .image-card {
-    max-width: 130px;
-    min-width: 50px;
+    max-width: 140px;
+    min-width: 60px;
     text-align: center;
     /*debug*/
     /*background-color: yellowgreen;*/
@@ -263,7 +265,7 @@ main .main-container {
 }
 
 .image-card h5 {
-    font-size:16px;
+    font-size:13px;
     font-weight:bold;
     color: white;
     padding-top: 10px;
