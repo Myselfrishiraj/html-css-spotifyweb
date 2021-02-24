@@ -51,32 +51,32 @@ aside .container {
     height: calc(100% - 80px);
 }
 
-aside .top .menu-top .menut-box {
+aside .top .menu-top .menu-box-1 {
     padding: 30px 0;
     font-size: 12px;
 }
 
-aside .top .menu-top .menut-box img {
+aside .top .menu-top .menu-box-1 img {
     width: 30px;
     padding-right: 10px;
 }
 
-aside .top .menu-top .menut-box ul li a {
+aside .top .menu-top .menu-box-1 ul li a {
     color: #A9A9A9;
     font-size: 12px;
 }
 
-aside .top .menu-top .menut-box ul li {
+aside .top .menu-top .menu-box-1 ul li {
     padding: 5px 0;
 }
 
 
-aside .top .menu-bottom .menub-box .title h3 {
+aside .top .menu-bottom .menu-box-2 .title h3 {
     text-transform: uppercase;
     font-size: 12px;
 }
 
-aside .top .menu-bottom .menub-box ul li a {
+aside .top .menu-bottom .menu-box-2 ul li a {
     color: #A9A9A9;
     font-size: 12px;
 }
@@ -214,18 +214,28 @@ main .main-container {
     color: white;
     font-size: 20px;
     font-weight: bold;
-    padding-top: 20px;
+}
+
+.box-title h5 {
+    font-size:10px;
+    font-weight:bold;
+    color: #A9A9A9;
 }
 
 .box-1 {
     display: flex;
+    padding: 20px 0;
     /*justify-content: space-between ;*/
     /*debug*/
-    background-color: green;
+    /*background-color: green;*/
 }
 
 .box-1.last {
     margin-bottom: 100px;
+}
+
+.box-1.last img{
+    border-radius: 50%;
 }
 
 
@@ -235,22 +245,36 @@ main .main-container {
     align-items: baseline;
     width: calc(100% / 6);
     /* debug*/
-    border: 1px solid red;
-    background-color: green;
+    /*border: 1px solid red;*/
+    /*background-color: green;*/
 }
 
-.box-1 .box-album .image-box {
+.box-1 .box-album .image-card {
     max-width: 130px;
     min-width: 50px;
     text-align: center;
     /*debug*/
-    background-color: yellowgreen;
-    border: 2px solid black;
+    /*background-color: yellowgreen;*/
+    /*border: 2px solid black;*/
 }
 
-.box-album .image-box > img {
+.box-album .image-card > img {
     max-width: 100%;
 }
+
+.image-card h5 {
+    font-size:16px;
+    font-weight:bold;
+    color: white;
+    padding-top: 10px;
+}
+.image-card p {
+    font-size:10px;
+    font-weight:bold;
+    color: #A9A9A9;
+}
+
+
 
 
 
