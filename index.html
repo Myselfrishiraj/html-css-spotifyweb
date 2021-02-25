@@ -20,7 +20,8 @@
         <div class="container">
             <div class="top">
                 <div class="logo">
-                    <img src="img/logo.svg" alt="logo spotify">
+                    <img class="logo-desk" src="img/logo.svg" alt="logo spotify">
+                    <img class="logo-mobile" src="img/logo-small.svg" alt="logo spotify">
                 </div>
                 <div class="menu-top">
                     <div class="menu-box-1">
@@ -84,7 +85,10 @@
         <div class="main-container">
             <div class="box-menu">
                 <ul>
-                    <li><a href="#">in evidenza</a></li>
+                    <li>
+                        <a href="#">in evidenza</a>
+                        <div class="linea"></div>
+                    </li>
                     <li><a href="#">podcast</a></li>
                     <li><a href="#">classifiche</a></li>
                     <li><a href="#">generi e mood</a></li>
@@ -93,92 +97,96 @@
                 </ul>
             </div>
 
-            <div class="box-title">
+            <!-- RECENTLY PLAYED -->
+
+            <div class="box-1">
                 <h2>Recently played</h2>
+                <div class="box-row">
+                    <div class="box-album">
+                        <div class="album-image">
+                            <img src="img/metal_lifting.jpg" alt="album heavy metal">
+                            <h5>Heavy metal</h5>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="box-album">
+                        <div class="album-image">
+                            <img src="img/stranger.jpeg" alt="album stranger things">
+                            <h5>Stranger Things, Vol.1(a Netflix Original Series Soundtrack)</h5>
+                            <p> Kyle Dixon & Michael Stein</p>
+                        </div>
+                    </div>
+                    <div class="box-album">
+                        <div class="album-image">
+                            <img src="img/aquietplace.jpeg" alt="album a quiet place">
+                            <h5>A quiet place</h5>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="box-album">
+                        <div class="album-image">
+                            <img src="img/split.jpeg" alt="album split">
+                            <h5>Split</h5>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="box-album">
+                        <div class="album-image">
+                            <img src="img/cure.jpeg" alt="album a cure for wellness">
+                            <h5>A cure for wellness</h5>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="box-album">
+                        <div class="album-image">
+                            <img src="img/sinister.jpeg" alt="album sinister">
+                            <h5>Sinister</h5>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <!-- CREATO PER JOHN DOE-->
+
             <div class="box-1">
-                <div class="box-album">
-                    <div class="image-card">
-                        <img src="img/metal_lifting.jpg" alt="album metal">
-                        <h5> Heavy Metal </h5>
-                        <p>Subtitle</p>
-                    </div>
-                </div>
-                <div class="box-album">
-                    <div class="image-card">
-                        <img src="img/stranger.jpeg" alt="album stranger things">
-                        <h5> Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h5>
-                        <p>Kyle Dixon & Michael Stein</p>
-                    </div>
-                </div>
-                <div class="box-album">
-                    <div class="image-card">
-                        <img src="img/aquietplace.jpeg" alt="album a quiet place">
-                        <h5>A quiet place</h5>
-                        <p>Subtitle</p>
-                    </div>
-                </div>
-                <div class="box-album">
-                    <div class="image-card">
-                        <img src="img/split.jpeg" alt="album split">
-                        <h5>Split</h5>
-                        <p>Subtitle</p>
-                    </div>
-                </div>
-                <div class="box-album">
-                    <div class="image-card">
-                        <img src="img/cure.jpeg" alt="album a cure of wellness">
-                        <h5>A cure of wellness</h5>
-                        <p>Subtitle</p>
-                    </div>
-                </div>
-                <div class="box-album">
-                    <div class="image-card">
-                        <img src="img/sinister.jpeg" alt="album sinister">
-                        <h5>Sinister</h5>
-                        <p>Subtitle</p>
-                    </div>
-                </div>
-            </div> <!--fine box-1-->
-
-
-            <div class="box-title">
                 <h2>Creato per John Doe</h2>
-                <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
-            </div>
+                <p>Più ascolti, più accurati saranno i suggerimenti</p>
 
-            <div class="box-1">
-                <div class="box-album">
-                    <div class="image-card">
-                        <img src="img/radar.jpeg" alt="album release radar">
-                        <h5>Release Radar</h5>
+                <div class="box-row">
+                    <div class="box-album">
+                        <div class="album-image">
+                            <img src="img/radar.jpeg" alt="album release radar">
+                            <h5>Release Radar</h5>
+                        </div>
+                    </div>
+                    <div class="box-album">
+                        <div class="album-image">
+                            <img src="img/mixdaily.jpeg" alt="album daily mix 1">
+                            <h5>Daily Mix 1</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="box-album">
-                    <div class="image-card">
-                        <img src="img/mixdaily.jpeg" alt="album mix daily">
-                        <h5>Daily Mix 1</h5>
-                    </div>
-                </div>
             </div>
 
-            <div class="box-title">
-                <h2>Artisti più popolari</h2>
-                <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
-            </div>
+            <!-- ARTISTI PIU' POPOLARI -->
 
             <div class="box-1 last">
-                <div class="box-album">
-                    <div class="image-card">
-                        <img src="img/youg.jpeg" alt="album lana del rey">
-                        <h5>Lana del Rey</h5>
+                <h2>Artisti più popolari</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti</p>
+
+                <div class="box-row">
+                    <div class="box-album">
+                        <div class="album-image">
+                            <img src="img/youg.jpeg" alt="album lana del rey">
+                            <h5>Lana del Rey</h5>
+                        </div>
                     </div>
-                </div>
-                <div class="box-album">
-                    <div class="image-card">
-                        <img src="img/einaudi.jpeg" alt="album ludovico einaudi">
-                        <h5>Ludovico Einaudi</h5>
+                    <div class="box-album">
+                        <div class="album-image">
+                            <img src="img/einaudi.jpeg" alt="album ludovico einaudi">
+                            <h5>Ludovico Einaudi</h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -189,6 +197,9 @@
 
     <footer>
         <div class="box-footer">
+
+            <!-- FOOTER SX -->
+
             <div class="box-left">
                 <div class="left">
                     <img src="img/sinister.jpeg" alt="icona sinister">
@@ -204,6 +215,9 @@
                     </div>
                 </div>
             </div>
+
+            <!-- FOOTER CENTRALE -->
+
             <div class="box-center">
                 <div class="music-player">
                     <ul>
@@ -214,13 +228,23 @@
                         <li><a href="#"><i class="fas fa-redo"></i></a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="box-right">
-                <div class="control-player">
+                <div class="music-bar">
                     <ul>
-                        <li><a href="#"><i class="fas fa-bars"></i></a></li>
-                        <li><a href="#"><i class="fas fa-desktop"></i></a></li>
+                        <li><a href="#">0:25</a></li>
+                        <li><a href="#">barra caricamento</a></li>
+                        <li><a href="#">4:35</a></li>
                     </ul>
+                </div>
+            </div>
+
+            <!-- FOOTER DX -->
+
+            <div class="box-right">
+                <div class="right">
+                    <div class="icon">
+                        <a href=""><i class="fas fa-bars"></i></a>
+                        <a href=""><i class="fas fa-desktop"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
