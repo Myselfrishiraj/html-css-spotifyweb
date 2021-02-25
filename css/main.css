@@ -44,6 +44,10 @@ aside .logo .logo-mobile {
     display: none;
 }
 
+.bottom .box-top .icona-mobile {
+    display: none;
+}
+
 aside .container {
     display: flex;
     flex-direction: column;
@@ -162,10 +166,6 @@ aside .bottom .box-top img {
 aside .bottom .box-bottom img {
     width: 35px;
     padding-right: 10px;
-}
-
-aside .bottom .box-bottom .box-user p {
-    padding-top: 10px;
 }
 
 /* main */
@@ -570,6 +570,19 @@ footer {
         display: block;
     }
 
+    .box-top ul, .box-bottom ul {
+        display: none;
+    }
+
+    .bottom .box-top .icona-mobile, .bottom .box-bottom .icona-mobile {
+        font-size: 25px;
+        display: block;
+        color: white;
+        margin-bottom: 8px;
+    }
+
+    /* sezione main */
+
     main {
         width: 100%;
         margin-left: 0;
@@ -599,7 +612,7 @@ footer {
         display: none;
     }
 
-    /* sezione album main */
+    /* sezione album */
 
     main .box-album {
         width: 50%;
