@@ -349,9 +349,7 @@ main .box-album .album-image img {
     display: block;
 }
 
-
-
-/*footer*/
+/* footer */
 
 footer {
     width: 100%;
@@ -428,6 +426,7 @@ footer {
 
 .box-footer .fa-play-circle {
     font-size: 22px;
+    transition: 0.1s;
 }
 
 .line-player span {
@@ -457,15 +456,11 @@ footer {
     width: 30%;
 }
 
-
 .box-footer .option-player {
     display: flex;
     align-items: center;
     width: 190px;
 }
-
-
-
 
 .option-player i {
     margin: 0 10px;
@@ -500,14 +495,14 @@ footer {
     right: -12px;
 }
 
-/* HOVER */
+/* hover footer */
 
 .album-icone a:hover{
     color: white;
 }
 
 .box-footer .fa-play-circle:hover {
-    font-size: 28px;
+    transform: scale(1.1);
 }
 
 .line-back:hover .point-1, .line-back:hover .point-2 {
@@ -522,12 +517,14 @@ footer {
 /******* MEDIA QUERY *******/
 
 /*Medium devices (tablets, 768px and up)*/
+
 @media screen and (max-width: 991px) {
 
 
 }
 
 /*Small devices (landscape phones, 576px and up)*/
+
 @media screen and (max-width: 767px) {
 
     main .box-row {
@@ -553,9 +550,12 @@ footer {
 }
 
 
-/* Extra small */
+/* Extra small devices */
 
 @media screen and (max-width: 575px) {
+
+
+    /* sezione aside */
 
     aside {
         width: 72px;
@@ -599,12 +599,11 @@ footer {
         display: none;
     }
 
-    /*sezione album main*/
+    /* sezione album main */
 
     main .box-album {
         width: 50%;
     }
-
 
 }
 
