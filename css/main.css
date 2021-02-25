@@ -28,12 +28,11 @@ ul {
 aside {
     height: 100vh;
     width: 250px;
-    background-color: #000;
-    z-index: 1;
     padding: 20px 0;
-    overflow: hidden;
+    background-color: #000;
     color: white;
     font-weight: 300;
+    z-index: 1;
     position: fixed;
 }
 
@@ -102,6 +101,13 @@ aside .top .menu-bottom .menu-box-2 .title ul li a {
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
+}
+
+#playlist-item {
+    /* modalità overflow*/
+    overflow: auto;
+    /*debug*/
+    /*background-color:darkgoldenrod;*/
 }
 
 aside .top .menu-bottom .menu-box-2 .title ul li a:hover {
@@ -190,7 +196,6 @@ main .box-upgrade ul {
 main .box-upgrade ul:hover {
     transform: scale(1.1);
 }
-
 
 main .box-upgrade ul {
     margin-right: 20px;
@@ -317,6 +322,31 @@ main .box-album .album-image img {
 
 .box-1.last img {
     border-radius: 50%;
+}
+
+.overlay {
+    position: relative;
+}
+
+.over-lay.fa-play-circle {
+    display: none;
+    position: absolute;
+    font-size: 50px;
+    color: #A9A9A9;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*debug*/
+    /*background-color: yellow;*/
+}
+
+.overlay:hover img {
+    opacity: 0.3;
+}
+
+.overlay:hover .over-lay {
+    display: block;
 }
 
 
