@@ -44,7 +44,7 @@ aside .logo .logo-mobile {
     display: none;
 }
 
-.bottom .box-top .icona-mobile {
+.bottom .box-top .icona-mobile, .bottom .box-bottom .icona-mobile {
     display: none;
 }
 
@@ -62,7 +62,6 @@ aside .top .menu-top .menu-box-1 {
 
 aside .top .menu-top .menu-box-1 ul li:first-child {
     border-left: 2px solid yellowgreen;
-
 }
 
 aside .top .menu-top .menu-box-1 img {
@@ -89,7 +88,6 @@ aside .top .menu-bottom {
     padding-left: 15px;
 }
 
-
 aside .top .menu-bottom .menu-box-2 .title h3 {
     text-transform: uppercase;
     font-size: 12px;
@@ -109,7 +107,7 @@ aside .top .menu-bottom .menu-box-2 .title ul li a {
 
 #playlist-item {
     /* modalità overflow*/
-    overflow: auto;
+    /*overflow: auto;*/
     /*debug*/
     /*background-color:darkgoldenrod;*/
 }
@@ -133,7 +131,6 @@ aside .top .menu-bottom .menu-box-2 ul li a:hover {
 aside .bottom {
     padding-left: 15px;
 }
-
 
 aside .bottom .box-top ul li {
     padding-bottom: 5px;
@@ -175,7 +172,7 @@ main {
     width: 100%;
     margin-left: 250px;
     /*debug*/
-    /*background-color: #141922;*/
+    /*background-color: forestgreen;*/
 }
 
 main .box-upgrade {
@@ -523,7 +520,6 @@ footer {
 
 @media screen and (max-width: 991px) {
 
-
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -622,42 +618,3 @@ footer {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/********* dal sito bootstrap ***********/
-/*Extra small devices (portrait phones, less than 576px)*/
-/*No media query for `xs` since this is the default in Bootstrap*/
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-
-}
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-
-}
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-
-}
-
-
