@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: auto;
 }
 
 body {
@@ -35,6 +36,7 @@ aside {
     z-index: 1;
     position: fixed;
 }
+
 
 aside .logo .logo-desk {
     width: 100px;
@@ -103,13 +105,6 @@ aside .top .menu-bottom .menu-box-2 .title ul li a {
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
-}
-
-#playlist-item {
-    /* modalità overflow*/
-    /*overflow: auto;*/
-    /*debug*/
-    /*background-color:darkgoldenrod;*/
 }
 
 aside .top .menu-bottom .menu-box-2 .title ul li a:hover {
